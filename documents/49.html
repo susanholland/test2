@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>reproNotCollaborator</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="cache-control" content="max-age=0" />
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="expires" content="0" />
+      <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+      <meta http-equiv="pragma" content="no-cache" />
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+      <link rel="stylesheet" href="../css/common.css">
+      <link rel="stylesheet" href="../css/hum_edit_viewer.css">
+
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <script src="../js/hum_edit_viewer.js"></script>
+
+   </head>
+   <body>
+      <div class="page-header">
+  <h1><a id="home-link" href="/reproNotCollaborator">Repro Not Collaborator</a></h1>
+</div>		 
+
+
+      <h1 class="doc-title">reproNotCollaborator</h1>
+      	  <style type="text/css">
+			.humedit-unclear { color: gray; }
+			.humedit-sic { border-bottom: 1px dashed #999; }
+			.humedit-reg { border-bottom: 1px dashed #999; }
+			.humedit-orig { border-bottom: 1px dashed #999; }
+			.humedit-handwriting {  }
+			.humedit-gap {  }
+			.humedit-del { color: gray; text-decoration:line-through }
+			.humedit-corr { border-bottom: 1px dashed #999; }
+			.humedit-add { font-size: 90%; font-style: italic; }
+			.humedit-placeName { color: green; }
+			.humedit-name { color: blue; }
+			.humedit-date { color: blue; }
+			.humedit-hi_underline { text-decoration: underline; }
+			.humedit-ref { color: blue; border-bottom: 1px dashed; }
+			.humedit-note {  }
+			.humedit-hi_italic { font-style: italic; }
+			.humedit-hi_bold { font-weight:bold; }
+	  </style>
+
+
+<div id="hum-edit-published">
+	<div class="panel panel-default">	
+		<div class="toolbar">
+			<div class="btn-group right $HIDDEN">
+			     <label class="compare-label">Compare with</label>
+			     <select id="comparands" onchange="location = this.options[this.selectedIndex].value;">
+			        <option value="" disabled selected>Select document</option>
+			     </select>
+			  </div>
+		</div>
+		<div id="document-viewport" class="panel-body">
+		   
+		   <div class="col-sm-12 panel-group" id="accordion">
+   <div class="tei-header-editor panel panel-default" id="published-header">
+      <div class="panel-heading collapsed" data-toggle="collapse" href="#collapse-form">
+         <div class="panel-title">
+            <a class="panel-heading-link" data-parent="#accordion">
+               <span class="glyphicon glyphicon-chevron-right header-chevron-icon"> </span> Document Header
+            </a>
+         </div>
+      </div>
+      
+      <div id="collapse-form" class="panel-collapse collapse tei-header-content">
+         <div class="panel-body">
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a href="#title" role="tab" data-toggle="tab">Title Statement</a></li>
+               <li><a href="#publication" role="tab" data-toggle="tab">Publication Statement</a></li>
+               <li><a href="#source" role="tab" data-toggle="tab">Source Description</a></li>
+            </ul>
+            
+            <div class="tab-content"> 
+               <div class="tab-pane active" id="title">
+   <table class="header block">
+         <tr>
+            <td class = "header name">Title:</td>
+            <td>reproNotCollaborator</td>
+         </tr>
+   
+      <tr class="sep"><td colspan="2"/></tr>
+   
+   
+      <tr class="sep"><td colspan="2"/></tr>
+   </table>
+</div>
+               <div class="tab-pane" id="publication">
+   <table class="header block">
+   
+      
+   </table>
+</div>
+               <div class="tab-pane" id="source">
+      <p class="freeform-desc"></p>
+</div>
+            </div>
+            
+         </div>
+     </div>
+    
+   </div>
+</div>
+		   
+				<div id="page-1436" class="sbs-page">
+				    <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					</div>	
+				    <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="1">
+						<div class="diplomatic"></div>
+					</div>
+					<input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+				</div>
+		</div>
+	</div>
+	<input id="tag_templatesJSON" name="tag_templatesJSON" type="hidden" value="{&quot;unclear&quot;:{&quot;id&quot;:17,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;unclear&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Unclear&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;color: gray&quot;,&quot;display_css&quot;:&quot;color: gray;&quot;,&quot;fields&quot;:[{&quot;id&quot;:21,&quot;name&quot;:&quot;reason&quot;,&quot;display_name&quot;:&quot;Reason&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:20,&quot;name&quot;:&quot;hand&quot;,&quot;display_name&quot;:&quot;Hand&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:19,&quot;name&quot;:&quot;agent&quot;,&quot;display_name&quot;:&quot;Agent&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:2,&quot;populate_with_selected_text&quot;:false}],&quot;fixed_attributes&quot;:[]},&quot;sic&quot;:{&quot;id&quot;:16,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;sic&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Sic&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;display_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;fields&quot;:[{&quot;id&quot;:18,&quot;name&quot;:&quot;correctedText&quot;,&quot;display_name&quot;:&quot;Corrected Text&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:true}],&quot;fixed_attributes&quot;:[]},&quot;reg&quot;:{&quot;id&quot;:15,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;reg&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Regularized&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;display_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;fields&quot;:[{&quot;id&quot;:17,&quot;name&quot;:&quot;originalText&quot;,&quot;display_name&quot;:&quot;Original Text&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:true}],&quot;fixed_attributes&quot;:[]},&quot;orig&quot;:{&quot;id&quot;:14,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;orig&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Original&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;display_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;fields&quot;:[{&quot;id&quot;:16,&quot;name&quot;:&quot;regularizedText&quot;,&quot;display_name&quot;:&quot;Regularized Text&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null}],&quot;fixed_attributes&quot;:[]},&quot;handwriting&quot;:{&quot;id&quot;:13,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;handwriting&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Handwriting&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;&quot;,&quot;display_css&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;fixed_attributes&quot;:[]},&quot;gap&quot;:{&quot;id&quot;:12,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;gap&quot;,&quot;zero_length&quot;:true,&quot;element_body_field&quot;:null,&quot;siglum&quot;:&quot;†&quot;,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Gap&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;&quot;,&quot;display_css&quot;:&quot;&quot;,&quot;fields&quot;:[{&quot;id&quot;:15,&quot;name&quot;:&quot;reason&quot;,&quot;display_name&quot;:&quot;Reason&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:14,&quot;name&quot;:&quot;hand&quot;,&quot;display_name&quot;:&quot;Hand&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:13,&quot;name&quot;:&quot;agent&quot;,&quot;display_name&quot;:&quot;Agent&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null}],&quot;fixed_attributes&quot;:[]},&quot;del&quot;:{&quot;id&quot;:11,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;del&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Deletion&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;color: red;&quot;,&quot;display_css&quot;:&quot;color: gray; text-decoration:line-through&quot;,&quot;fields&quot;:[{&quot;id&quot;:12,&quot;name&quot;:&quot;type&quot;,&quot;display_name&quot;:&quot;Type&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;term&quot;,&quot;vocab_id&quot;:3,&quot;populate_with_selected_text&quot;:false},{&quot;id&quot;:11,&quot;name&quot;:&quot;certainty&quot;,&quot;display_name&quot;:&quot;Certainty&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;term&quot;,&quot;vocab_id&quot;:1,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:10,&quot;name&quot;:&quot;hand&quot;,&quot;display_name&quot;:&quot;Hand&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null}],&quot;fixed_attributes&quot;:[]},&quot;corr&quot;:{&quot;id&quot;:10,&quot;xml_tag&quot;:&quot;&quot;,&quot;name&quot;:&quot;corr&quot;,&quot;zero_length&quot;:false,&quot;element_body_field&quot;:null,&quot;siglum&quot;:&quot;&quot;,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Correction&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;display_css&quot;:&quot;border-bottom: 1px dashed #999;&quot;,&quot;fields&quot;:[{&quot;id&quot;:9,&quot;name&quot;:&quot;originalText&quot;,&quot;display_name&quot;:&quot;Original Text&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:true}],&quot;fixed_attributes&quot;:[]},&quot;add&quot;:{&quot;id&quot;:9,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;add&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Transcription&quot;,&quot;display_name&quot;:&quot;Addition&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;color: blue;&quot;,&quot;display_css&quot;:&quot;font-size: 90%; font-style: italic;&quot;,&quot;fields&quot;:[{&quot;id&quot;:8,&quot;name&quot;:&quot;placement&quot;,&quot;display_name&quot;:&quot;Placement&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;term&quot;,&quot;vocab_id&quot;:4,&quot;populate_with_selected_text&quot;:false},{&quot;id&quot;:7,&quot;name&quot;:&quot;certainty&quot;,&quot;display_name&quot;:&quot;Certainty&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;term&quot;,&quot;vocab_id&quot;:1,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:6,&quot;name&quot;:&quot;hand&quot;,&quot;display_name&quot;:&quot;Hand&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null}],&quot;fixed_attributes&quot;:[]},&quot;placeName&quot;:{&quot;id&quot;:8,&quot;xml_tag&quot;:&quot;&quot;,&quot;name&quot;:&quot;placeName&quot;,&quot;zero_length&quot;:false,&quot;element_body_field&quot;:null,&quot;siglum&quot;:&quot;&quot;,&quot;tag_set&quot;:&quot;Names, Dates, and Places&quot;,&quot;display_name&quot;:&quot;Place&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;color: green;&quot;,&quot;display_css&quot;:&quot;color: green;&quot;,&quot;fields&quot;:[],&quot;fixed_attributes&quot;:[]},&quot;name&quot;:{&quot;id&quot;:7,&quot;xml_tag&quot;:&quot;&quot;,&quot;name&quot;:&quot;name&quot;,&quot;zero_length&quot;:false,&quot;element_body_field&quot;:null,&quot;siglum&quot;:&quot;&quot;,&quot;tag_set&quot;:&quot;Names, Dates, and Places&quot;,&quot;display_name&quot;:&quot;Person&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;color: blue;&quot;,&quot;display_css&quot;:&quot;color: blue;&quot;,&quot;fields&quot;:[],&quot;fixed_attributes&quot;:[]},&quot;date&quot;:{&quot;id&quot;:6,&quot;xml_tag&quot;:null,&quot;name&quot;:&quot;date&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;Names, Dates, and Places&quot;,&quot;display_name&quot;:&quot;Date&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;color: blue;&quot;,&quot;display_css&quot;:&quot;color: blue;&quot;,&quot;fields&quot;:[],&quot;fixed_attributes&quot;:[]},&quot;hi_underline&quot;:{&quot;id&quot;:5,&quot;xml_tag&quot;:&quot;hi&quot;,&quot;name&quot;:&quot;hi_underline&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;General Use&quot;,&quot;display_name&quot;:&quot;Underline&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;text-decoration: underline;&quot;,&quot;display_css&quot;:&quot;text-decoration: underline;&quot;,&quot;fields&quot;:[],&quot;fixed_attributes&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;rend&quot;,&quot;value&quot;:&quot;underline&quot;}]},&quot;ref&quot;:{&quot;id&quot;:4,&quot;xml_tag&quot;:&quot;&quot;,&quot;name&quot;:&quot;ref&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;General Use&quot;,&quot;display_name&quot;:&quot;Ref&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;color: blue; border-bottom: 1px dashed;&quot;,&quot;display_css&quot;:&quot;color: blue; border-bottom: 1px dashed;&quot;,&quot;fields&quot;:[{&quot;id&quot;:5,&quot;name&quot;:&quot;target&quot;,&quot;display_name&quot;:&quot;Target&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null}],&quot;fixed_attributes&quot;:[]},&quot;note&quot;:{&quot;id&quot;:3,&quot;xml_tag&quot;:&quot;&quot;,&quot;name&quot;:&quot;note&quot;,&quot;zero_length&quot;:true,&quot;element_body_field&quot;:null,&quot;siglum&quot;:&quot;*&quot;,&quot;tag_set&quot;:&quot;General Use&quot;,&quot;display_name&quot;:&quot;Note&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;&quot;,&quot;display_css&quot;:&quot;&quot;,&quot;fields&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;place&quot;,&quot;display_name&quot;:&quot;Placement&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;term&quot;,&quot;vocab_id&quot;:4,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:3,&quot;name&quot;:&quot;text&quot;,&quot;display_name&quot;:&quot;Note Text&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;memo&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:2,&quot;name&quot;:&quot;resp&quot;,&quot;display_name&quot;:&quot;Responsibility&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null},{&quot;id&quot;:1,&quot;name&quot;:&quot;type&quot;,&quot;display_name&quot;:&quot;Type&quot;,&quot;description&quot;:&quot;&quot;,&quot;field_type&quot;:&quot;text&quot;,&quot;vocab_id&quot;:null,&quot;populate_with_selected_text&quot;:null}],&quot;fixed_attributes&quot;:[]},&quot;hi_italic&quot;:{&quot;id&quot;:2,&quot;xml_tag&quot;:&quot;hi&quot;,&quot;name&quot;:&quot;hi_italic&quot;,&quot;zero_length&quot;:null,&quot;element_body_field&quot;:null,&quot;siglum&quot;:null,&quot;tag_set&quot;:&quot;General Use&quot;,&quot;display_name&quot;:&quot;Italic&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;font-style: italic;&quot;,&quot;display_css&quot;:&quot;font-style: italic;&quot;,&quot;fields&quot;:[],&quot;fixed_attributes&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;rend&quot;,&quot;value&quot;:&quot;italic&quot;}]},&quot;hi_bold&quot;:{&quot;id&quot;:1,&quot;xml_tag&quot;:&quot;hi&quot;,&quot;name&quot;:&quot;hi_bold&quot;,&quot;zero_length&quot;:false,&quot;element_body_field&quot;:null,&quot;siglum&quot;:&quot;&quot;,&quot;tag_set&quot;:&quot;General Use&quot;,&quot;display_name&quot;:&quot;Bold&quot;,&quot;description&quot;:&quot;&quot;,&quot;editor_css&quot;:&quot;font-weight:bold;&quot;,&quot;display_css&quot;:&quot;font-weight:bold;&quot;,&quot;fields&quot;:[],&quot;fixed_attributes&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;rend&quot;,&quot;value&quot;:&quot;bold&quot;}]}}" />
+</div>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		var seaDragonAssetsPath = "https://s3.amazonaws.com/assets-juxtaeditions/assets/"
+        var externalContentPath = "/reproNotCollaborator/catalog/"
+		var publishedView = new HumEditViewer.PublishedView({
+            el: $("#hum-edit-published"),
+            seaDragonAssetsPath: seaDragonAssetsPath,
+            externalContentPath: externalContentPath });
+		publishedView.render();	
+		
+		$("#accordion .panel-heading").on("click", function(e) {
+		    var icon = $('.header-chevron-icon');
+		    if (icon.hasClass('glyphicon-chevron-right') ) {
+		      icon.removeClass('glyphicon-chevron-right');
+            icon.addClass('glyphicon-chevron-down');
+		    } else {
+		      icon.removeClass('glyphicon-chevron-down');
+            icon.addClass('glyphicon-chevron-right');
+		    }
+		});
+	});
+
+</script>
+
+
+      <div class="page-footer">
+    <div class="juxta-brand">
+      <a href="http://www.juxtaeditions.com/"><img alt="Juxta logo" id="juxta-logo" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/juxta-logo.png" /></a>
+    </div>
+</div>
+   </body>
+</html>

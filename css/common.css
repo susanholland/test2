@@ -1,0 +1,83 @@
+
+#home-link {
+   color: black;
+}
+
+#main-content {
+	height: 100%;
+	margin-left: 20px;
+}
+
+.error {
+	color: red;
+}
+
+.juxta-brand {
+	
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.page-header {
+	margin-left: 20px;
+}
+
+.page-footer {
+	clear: both;
+	margin-top: 20px;
+	padding-right: 20px;
+	width: 100%;
+	height: 80px;
+	background: #eaeaea;	
+}
+
+.edition-cover {
+	float: right;
+	max-width: 500px;
+}
+
+.edition-cover img {
+   max-width: 500px;
+}
+
+.main-content {
+	max-width: 500px;
+}
+
+#published-header {
+   cursor: pointer;
+}
+
+#published-header .header-title {
+   font-size: 1.2em;
+   margin: 20px 0 10px 0px;
+   border-bottom: 1px solid #ddd;
+   background-color: #fafafa;
+   border-top: 1px solid #ddd;
+   padding: 1px 15px;
+}
+   
+#published-header .header-data {
+   margin: 5px 35px;
+}
+   
+#published-header .freeform-desc {
+   margin: 35px;
+}
+   
+#published-header table.header.block {
+   border-collapse: collapse;
+   margin: 5px 35px;
+}
+      
+#published-header table.header.block td {
+   padding: 3px 8px;
+}
+      
+#published-header table.header.block td.header.name {
+  font-weight: 500;
+  text-align: right;
+  color: #888;
+  width: 210px;
+}
